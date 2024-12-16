@@ -53,6 +53,7 @@ int main() {
 }
 
 //error: swapping logic is backwards
+//uhhh this one works too ig
 void selection_sort_1( double            array[],
                        std::size_t const capacity ) {
   for ( std::size_t k{ capacity - 1 }; k > 0; --k ) {
@@ -78,6 +79,7 @@ void selection_sort_2( double            array[],
 }
 
 //just doing way too much lowkey
+//BUT IT WORKS??
 void selection_sort_3( double            array[],
                        std::size_t const capacity ) {
   for ( std::size_t k{ 0 }; k < capacity; ++k ) {
@@ -95,7 +97,7 @@ void selection_sort_3( double            array[],
   }
 }
 
-
+//idx is always less than capacity so there is an infinite loop
 void selection_sort_4( double            array[],
                        std::size_t const capacity ) {
   for ( std::size_t k{ capacity - 1 }; k > 0; --k ) {
@@ -113,6 +115,8 @@ void selection_sort_4( double            array[],
   }
 }
 
+//i think this one works>???
+//it does but it changes the type to be int instead of double :///////// trolling
 void selection_sort_5( double            array[],
                        std::size_t const capacity ) {
   for ( std::size_t k{ capacity - 1 }; k > 0; --k ) {
